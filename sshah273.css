@@ -1,0 +1,168 @@
+/* General Layout */
+
+header {
+    text-align: center;     
+    padding: 20px;               
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+h1 {
+    color: #2c3e50;
+    margin: 0 0 10px 0;
+}
+
+.author-info {
+    color: #666;
+}
+
+.author-info p {
+    margin: 5px 0;
+}
+
+/* Control Panel */
+.control-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #495057;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+}
+
+select:focus {
+    outline: none;
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 2px rgba(13,110,253,.25);
+}
+
+/* Visualization Container */
+.viz-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.visualization {
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    min-height: 500px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* D3 Specific Styles */
+.axis-label {
+    font-size: 12px;
+    fill: #666;
+}
+
+.point {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.point:hover {
+    opacity: 0.7;
+}
+
+.lasso path {
+    stroke: rgb(80, 80, 80);
+    stroke-width: 2px;
+}
+
+.lasso .drawn {
+    fill: lightblue;       /* Set the fill color to light blue */
+    fill-opacity: 0.3;     /* Make it semi-transparent */
+    stroke: lightblue;     /* Outline color */
+    stroke-width: 1px;     /* Set the outline thickness */
+}
+
+
+.lasso .loop_close {
+    fill: none;
+    stroke-dasharray: 4, 4;
+}
+
+.lasso .origin {
+    fill: #3b4994;
+    fill-opacity: 0.7;
+}
+
+.not_possible {
+    fill: rgb(200,200,200);
+}
+
+.possible {
+    fill: #EC7014;
+}
+
+/* Add these styles to your style.css */
+.lasso path {
+    stroke: rgb(80,80,80);
+    stroke-width: 2px;
+}
+
+.lasso .drawn {
+    fill-opacity: .05;
+}
+
+.lasso .loop_close {
+    fill: none;
+    stroke-dasharray: 4,4;
+}
+
+.lasso .origin {
+    fill: #3b4994;
+    fill-opacity: .7;
+}
+
+.not_possible {
+    fill: rgb(200,200,200);
+}
+
+.possible {
+    fill: #EC7014;
+}

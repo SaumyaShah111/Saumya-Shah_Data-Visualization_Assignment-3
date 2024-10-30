@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Transitions Homework</title>
+    <link rel="stylesheet" href="sshah273.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-lasso@0.0.5/build/d3-lasso.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Homework #3: D3 Transitions</h1>
+            <div class="author-info">
+                <p>Name: Saumya Shah</p>
+                <p>Email: sshah273@asu.edu</p>
+            </div>
+        </header>
+
+        <div class="control-panel">
+            <div class="control-group">
+                <label for="dataset-select">Dataset:</label>
+                <select id="dataset-select">
+                    <option value="penguins">Penguins Cleaned</option>
+                    <option value="pokemon">Pokemon with Stats</option>
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="x-select">X Attribute:</label>
+                <select id="x-select"></select>
+            </div>
+
+            <div class="control-group">
+                <label for="y-select">Y Attribute:</label>
+                <select id="y-select"></select>
+            </div>
+
+            <div class="control-group">
+                <label for="color-select">Color:</label>
+                <select id="color-select"></select>
+            </div>
+
+            <div class="control-group">
+                <label for="boxplot-select">Boxplot:</label>
+                <select id="boxplot-select"></select>
+            </div>
+
+            <div class="control-group">
+                <label for="plot-type">Plot Type:</label>
+                <select id="plot-type">
+                    <option value="box">Box Plot</option>
+                    <option value="violin">Violin Plot</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="viz-container">
+            <div id="scatter-plot" class="visualization"></div>
+            <div id="box-plot" class="visualization"></div>
+        </div>
+    </div>
+    <script src="sshah273.js"></script>
+</body>
+</html>
